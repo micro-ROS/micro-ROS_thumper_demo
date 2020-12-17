@@ -29,7 +29,7 @@ There are two micro-ROS nodes, the joystick's publisher and the robot's subscrib
 
 
 ## Hardware
-The following is a list of the [demo hardware](https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/doc/thumper_hardware.md):
+The following is a list of the [demo hardware](https://github.com/micro-ROS/micro-ROS_thumper_demo/blob/master/doc/thumper_hardware.md):
 - 1 x Wild Thumper 6WD Chassis,
 - 1 x RoboClaw 2x15A (V5E),
 - 2 x Olimex STM32-E407,
@@ -44,7 +44,7 @@ How to wire hardware components is described [here](doc/thumper_wiring.md).
 
 ## Application building
 
-How to build the Olimex STM32-E407 firmware with the micro-ROS applications is describe [here](https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/doc/thumper_oli_apps.md).
+How to build the Olimex STM32-E407 firmware with the micro-ROS applications is describe [here](https://github.com/micro-ROS/micro-ROS_thumper_demo/blob/master/doc/thumper_oli_apps.md).
 In case of the joystick part use `uct_jspublisher_romfs` as the configuration profile, for the Thumper's Olimex board use the  `uct_jssubscriber_romfs` file.
 
 
