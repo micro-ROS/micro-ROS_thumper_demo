@@ -171,7 +171,7 @@ The agent is ready to work with micro-ROS clients over 6LoWPAN.
 
 - Power ON the joystick equipment.
 - Power ON the Thumper platform.
-- Insert the ATUSB adapter into a USB port on PC and run the micro-ROS agent as described in the previous sectino.
+- Insert the ATUSB adapter into a USB port on PC and run the micro-ROS agent as described in the previous section.
 
 
 After a while, the micro-ROS publisher and subscriber will establish a connection with the agent and the vehicle can then be remotely driven with the joystick. To let the vehicle run forward / backward or change its speed, push the stick along X axis, to move leftward / rightward rotate the handle around Z axis.
