@@ -39,7 +39,7 @@ The following is a list of the [demo hardware](https://github.com/micro-ROS/micr
 - 1 x [ATUSB IEEE 802.15.4 USB Adapter](http://shop.sysmocom.de/products/atusb),
 - 1 x [ST-LINK/V2](https://www.st.com/en/development-tools/st-link-v2.html) to flash firmware to Olimex boards.
 
-How to wire hardware components is described [here](doc/thumper_wiring.md).
+How to wire hardware components is described [here](https://github.com/micro-ROS/micro-ROS_thumper_demo/blob/master/doc/thumper_wiring.md).
 
 
 ## Application building
@@ -50,8 +50,8 @@ In case of the joystick part use `uct_jspublisher_romfs` as the configuration pr
 
 ## Running the demo
 
-- Power on the joystick equipment.
-- Power on the Thumper platform.
+- Power ON the joystick equipment.
+- Power ON the Thumper platform.
 - Insert the ATUSB adapter into a USB port on PC and run the micro-ROS agent as described [here](https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/doc/thumper_agent.md).
 
 After a while, the micro-ROS publisher and subscriber will establish a connection with the agent and the vehicle can then be remotely driven with the joystick. To let the vehicle run forward / backward or change its speed, push the stick along X axis, to move leftward / rightward rotate the handle around Z axis.
