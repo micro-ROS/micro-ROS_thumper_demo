@@ -1,4 +1,3 @@
-```
 #!/bin/bash
 
 # wpan_atusb.sh
@@ -82,4 +81,3 @@ sudo ip neigh add to $CLIENT_IPV6 dev lowpan0 lladdr $CLIENT_ADDR
 sudo ip route add $CLIENT_IPV6 dev $SERVER_DEV
 echo "route:"
 ip route get $CLIENT_IPV6
-```
