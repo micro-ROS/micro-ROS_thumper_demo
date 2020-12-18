@@ -52,6 +52,6 @@ In case of the joystick part use `uct_jspublisher_romfs` as the configuration pr
 
 - Power ON the joystick equipment.
 - Power ON the Thumper platform.
-- Insert the ATUSB adapter into a USB port on PC and run the micro-ROS agent as described [here](https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/doc/thumper_agent.md).
+- Insert the ATUSB adapter into a USB port on PC and run the micro-ROS agent as described [here](https://github.com/micro-ROS/micro-ROS_thumper_demo/blob/master/   doc/thumper_agent.md).
 
 After a while, the micro-ROS publisher and subscriber will establish a connection with the agent and the vehicle can then be remotely driven with the joystick. To let the vehicle run forward / backward or change its speed, push the stick along X axis, to move leftward / rightward rotate the handle around Z axis.
