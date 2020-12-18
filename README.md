@@ -29,7 +29,7 @@ There are two micro-ROS nodes, the joystick's publisher and the robot's subscrib
 
 
 ## Hardware
-The following is a list of the [demo hardware](https://github.com/micro-ROS/micro-ROS_thumper_demo/blob/foxy/doc/thumper_hardware.md):
+The following is a list of the demo hardware:
 - 1 x Wild Thumper 6WD Chassis,
 - 1 x RoboClaw 2x15A (V5E),
 - 2 x Olimex STM32-E407,
@@ -38,6 +38,73 @@ The following is a list of the [demo hardware](https://github.com/micro-ROS/micr
 - 1 x PC,
 - 1 x [ATUSB IEEE 802.15.4 USB Adapter](http://shop.sysmocom.de/products/atusb),
 - 1 x [ST-LINK/V2](https://www.st.com/en/development-tools/st-link-v2.html) to flash firmware to Olimex boards.
+
+# Thumper Demo Hardware
+
+**Table of Contents**
+- [Thumper](#thumper)
+- [RoboClaw](#roboclaw)
+- [Olimex STM32-E407](#olimex-stm32-e407)
+- [Pmod RF2](#pmod-rf2)
+- [Extreme 3D Pro Joystick](#extreme-3d-pro-joystick)
+
+## Thumper
+
+All-Terrain Robot Chassis ([Product Link](https://www.pololu.com/product/1563))
+
+* 6-wheel-drive
+* independent suspension for each wheel
+* 120mm-diameter wheels
+
+<img src="https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/foxy/images/thumper.jpg" width="350">
+
+*Source: pololu.com*
+
+## RoboClaw
+
+2x15A Motor Controller ([Product Link](https://www.basicmicro.com/RoboClaw-2x15A-Motor-Controller_p_10.html))
+
+* Position Control
+* USB, Serial, R/C, Analog Inputs
+
+<img src="https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/foxy/images/roboclaw_2x15a.png" width="350">
+
+*Source: [basicmicro.com](https://www.basicmicro.com/RoboClaw-2x15A-Motor-Controller_p_10.html)*
+
+
+## Olimex STM32-E407
+
+Development board for STM32F407ZGT6 microcontroller ([Product Link](https://www.olimex.com/Products/ARM/ST/STM32-E407/open-source-hardware))
+
+* Ethernet
+* USB
+
+<img src="https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/foxy/images/STM32-E407-02.jpg" width="350">
+
+*Source: [olimex.com](https://www.olimex.com/Products/ARM/ST/STM32-E407/open-source-hardware)*
+
+## Pmod RF2
+IEEE 802.15 RF transceiver module ([Product Link](https://reference.digilentinc.com/reference/pmod/pmodrf2/start))
+
+* supports ZigBee, MiWi and MiWi P2P
+* 12-pin connector with SPI interface
+
+<img src="https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/foxy/images/pmodrf2-0.png" width="350">
+
+*Source: [digilentinc.com](https://reference.digilentinc.com/reference/pmod/pmodrf2/start)*
+
+
+## Extreme 3D Pro Joystick
+
+[Product site](https://www.logitechg.com/en-us/products/space/extreme-3d-pro-joystick.963290-0403.html)
+
+* 12 buttons
+
+<img src="https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/foxy/images/extreme-3d-pro-joystick53631.png" width="400">
+
+*Source: [logitechg.com](https://www.logitechg.com/en-us/products/space/extreme-3d-pro-joystick.963290-0403.html)*
+
+
 
 ## Thumper demo wiring
 
