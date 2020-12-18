@@ -155,7 +155,7 @@ sudo apt-get update -y
 sudo apt-get install -y wpan-tools
 ```
 
-Having the ATUSB adapter inserted into a USB port on PC, run the script [wpan_atusb.sh](../atusb/wpan_atusb_sh.md) with administrator privileges to configure the `6lowpan` interface.
+Having the ATUSB adapter inserted into a USB port on PC, run the script [wpan_atusb.sh](https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/atusb/wpan_atusb_sh) with administrator privileges to configure the `6lowpan` interface.
 Then, the `lowpan0` interface is ready to be used, so the  communication with the joystick and Thumper 6LoWPAN devices can be established.
 
 - Download the micro-ROS agent Foxy image from  the [Docker Hub](https://hub.docker.com/), then run the agent in udp IPv6 addressing mode.
