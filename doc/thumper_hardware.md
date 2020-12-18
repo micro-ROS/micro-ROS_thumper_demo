@@ -15,18 +15,18 @@ All-Terrain Robot Chassis ([Product Link](https://www.pololu.com/product/1563))
 * independent suspension for each wheel
 * 120mm-diameter wheels
 
-<img src="../images/thumper.jpg" width="350">
+<img src="https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/images/thumper.jpg" width="350">
 
 *Source: pololu.com*
 
-## RoboClaw 
+## RoboClaw
 
 2x15A Motor Controller ([Product Link](https://www.basicmicro.com/RoboClaw-2x15A-Motor-Controller_p_10.html))
 
 * Position Control
 * USB, Serial, R/C, Analog Inputs
 
-<img src="../images/roboclaw_2x15a.png" width="350">
+<img src="https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/images/roboclaw_2x15a.png" width="350">
 
 *Source: [basicmicro.com](https://www.basicmicro.com/RoboClaw-2x15A-Motor-Controller_p_10.html)*
 
@@ -38,7 +38,7 @@ Development board for STM32F407ZGT6 microcontroller ([Product Link](https://www.
 * Ethernet
 * USB
 
-<img src="../images/STM32-E407-02.jpg" width="350">
+<img src="https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/images/STM32-E407-02.jpg" width="350">
 
 *Source: [olimex.com](https://www.olimex.com/Products/ARM/ST/STM32-E407/open-source-hardware)*
 
@@ -48,7 +48,7 @@ IEEE 802.15 RF transceiver module ([Product Link](https://reference.digilentinc.
 * supports ZigBee, MiWi and MiWi P2P
 * 12-pin connector with SPI interface
 
-<img src="../images/pmodrf2-0.png" width="350">
+<img src="https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/images/pmodrf2-0.png" width="350">
 
 *Source: [digilentinc.com](https://reference.digilentinc.com/reference/pmod/pmodrf2/start)*
 
@@ -59,7 +59,7 @@ IEEE 802.15 RF transceiver module ([Product Link](https://reference.digilentinc.
 
 * 12 buttons
 
-<img src="../images/extreme-3d-pro-joystick53631.png" width="400">
+<img src="https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/images/extreme-3d-pro-joystick53631.png" width="400">
 
 *Source: [logitechg.com](https://www.logitechg.com/en-us/products/space/extreme-3d-pro-joystick.963290-0403.html)*
 

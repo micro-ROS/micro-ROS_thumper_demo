@@ -1,5 +1,4 @@
-## Building the Olimex STM32-E407 firmware of the Thumper demo
-
+## Building the Thumper demo's firmware for the Olimex STM32-E407 platform
 
 Use the Docker installation on PC to prepare the environment for the demo applications:
 - Download the micro-ROS base Foxy image from  [the Docker Hub](https://hub.docker.com/), then run a docker container.
@@ -57,4 +56,4 @@ ros2 run micro_ros_setup flash_firmware.sh
 
 ```
 ros2 run micro_ros_setup flash_firmware.sh
-```  
+```
