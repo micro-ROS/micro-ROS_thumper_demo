@@ -39,8 +39,44 @@ The following is a list of the [demo hardware](https://github.com/micro-ROS/micr
 - 1 x [ATUSB IEEE 802.15.4 USB Adapter](http://shop.sysmocom.de/products/atusb),
 - 1 x [ST-LINK/V2](https://www.st.com/en/development-tools/st-link-v2.html) to flash firmware to Olimex boards.
 
-How to wire hardware components is described [here](https://github.com/micro-ROS/micro-ROS_thumper_demo/blob/master/doc/thumper_wiring.md).
+## Thumper demo wiring
 
+Below you can find how the  hardware components should be connected.
+
+<br>
+
+|PmodRF2	 | Olimex STM32-E407 |
+|:-----------:|:-----------:|
+|VCC/12| 3V3|
+|GND/11| GND|
+|INT/7| D8|
+|RST/8| D9|
+|CS/1| D10|
+|MOSI/2| D11|
+|MISO/3| D12|
+|SCLK/4| D13|
+
+<br>
+
+|RoboClaw | Olimex STM32-E407 |
+|:-----------:|:-----------:|
+|S1| USART6_TX (UEXT/3)|
+|GND| GND (UEXT/2)|
+
+<br>
+
+
+|Logitech Extreme 3D PRO | Olimex STM32-E407 |
+|:-----------:|:-----------:|
+|Joystick USB<sup>1</sup>| USB_OTG2|
+
+
+<br>
+
+______
+
+
+<sup>1)</sup> connected to the external 5 VDC power supply
 
 ## Application building
 
@@ -48,10 +84,33 @@ How to build the Olimex STM32-E407 firmware with the micro-ROS applications is d
 In case of the joystick part use `uct_jspublisher_romfs` as the configuration profile, for the Thumper's Olimex board use the  `uct_jssubscriber_romfs` file.
 
 
+
+## Running the micro-ROS agent over 6LoWPAN on the Thumper demo
+
+- Install wpan-tools on the PC.
+
+```
+sudo apt-get update -y
+sudo apt-get install -y wpan-tools
+```
+
+Having the ATUSB adapter inserted into a USB port on PC, run the script [wpan_atusb.sh](../atusb/wpan_atusb_sh.md) with administrator privileges to configure the `6lowpan` interface.
+Then, the `lowpan0` interface is ready to be used, so the  communication with the joystick and Thumper 6LoWPAN devices can be established.
+
+- Download the micro-ROS agent Foxy image from  the [Docker Hub](https://hub.docker.com/), then run the agent in udp IPv6 addressing mode.
+
+```
+docker pull microros/micro-ros-agent:foxy
+docker run -it --net=host microros/micro-ros-agent:foxy udp6 --port 9999 -v6
+```
+
+The agent is ready to work with micro-ROS clients over 6LoWPAN.
+
 ## Running the demo
 
 - Power ON the joystick equipment.
 - Power ON the Thumper platform.
-- Insert the ATUSB adapter into a USB port on PC and run the micro-ROS agent as described [here](https://github.com/micro-ROS/micro-ROS_thumper_demo/blob/master/   doc/thumper_agent.md).
+- Insert the ATUSB adapter into a USB port on PC and run the micro-ROS agent as described in the previous sectino.
+
 
 After a while, the micro-ROS publisher and subscriber will establish a connection with the agent and the vehicle can then be remotely driven with the joystick. To let the vehicle run forward / backward or change its speed, push the stick along X axis, to move leftward / rightward rotate the handle around Z axis.
