@@ -28,7 +28,7 @@ The micro-ROS agent enables data transmission between the micro-ROS publisher an
 There are two micro-ROS nodes, the joystick's publisher and the robot's subscriber, which work on the topic `/velocity_cmd` - *the velocity for driving a RoboClaw motor controller*.
 
 
-## Hardware
+## Thumper Demo Hardware
 The following is a list of the demo hardware:
 - 1 x Wild Thumper 6WD Chassis,
 - 1 x RoboClaw 2x15A (V5E),
@@ -39,16 +39,7 @@ The following is a list of the demo hardware:
 - 1 x [ATUSB IEEE 802.15.4 USB Adapter](http://shop.sysmocom.de/products/atusb),
 - 1 x [ST-LINK/V2](https://www.st.com/en/development-tools/st-link-v2.html) to flash firmware to Olimex boards.
 
-# Thumper Demo Hardware
-
-**Table of Contents**
-- [Thumper](#thumper)
-- [RoboClaw](#roboclaw)
-- [Olimex STM32-E407](#olimex-stm32-e407)
-- [Pmod RF2](#pmod-rf2)
-- [Extreme 3D Pro Joystick](#extreme-3d-pro-joystick)
-
-## Thumper
+#### Thumper
 
 All-Terrain Robot Chassis ([Product Link](https://www.pololu.com/product/1563))
 
@@ -60,7 +51,7 @@ All-Terrain Robot Chassis ([Product Link](https://www.pololu.com/product/1563))
 
 *Source: pololu.com*
 
-## RoboClaw
+##### RoboClaw
 
 2x15A Motor Controller ([Product Link](https://www.basicmicro.com/RoboClaw-2x15A-Motor-Controller_p_10.html))
 
@@ -72,7 +63,7 @@ All-Terrain Robot Chassis ([Product Link](https://www.pololu.com/product/1563))
 *Source: [basicmicro.com](https://www.basicmicro.com/RoboClaw-2x15A-Motor-Controller_p_10.html)*
 
 
-## Olimex STM32-E407
+#### Olimex STM32-E407
 
 Development board for STM32F407ZGT6 microcontroller ([Product Link](https://www.olimex.com/Products/ARM/ST/STM32-E407/open-source-hardware))
 
@@ -83,7 +74,7 @@ Development board for STM32F407ZGT6 microcontroller ([Product Link](https://www.
 
 *Source: [olimex.com](https://www.olimex.com/Products/ARM/ST/STM32-E407/open-source-hardware)*
 
-## Pmod RF2
+#### Pmod RF2
 IEEE 802.15 RF transceiver module ([Product Link](https://reference.digilentinc.com/reference/pmod/pmodrf2/start))
 
 * supports ZigBee, MiWi and MiWi P2P
@@ -94,7 +85,7 @@ IEEE 802.15 RF transceiver module ([Product Link](https://reference.digilentinc.
 *Source: [digilentinc.com](https://reference.digilentinc.com/reference/pmod/pmodrf2/start)*
 
 
-## Extreme 3D Pro Joystick
+#### Extreme 3D Pro Joystick
 
 [Product site](https://www.logitechg.com/en-us/products/space/extreme-3d-pro-joystick.963290-0403.html)
 
@@ -106,7 +97,7 @@ IEEE 802.15 RF transceiver module ([Product Link](https://reference.digilentinc.
 
 
 
-## Thumper demo wiring
+#### Thumper demo wiring
 
 Below you can find how the  hardware components should be connected.
 
