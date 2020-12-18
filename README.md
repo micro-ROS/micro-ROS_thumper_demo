@@ -4,7 +4,7 @@ This demo showcases capabilities of micro-ROS integrated with 6LoWPAN radio comm
 More specifically, it shows the remote control of an unmanned mobile platform.
 As a research platform the THUMPER robot was controlled remotely with a joystick.
 
-![tupec_intro](https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/images/thumper_intro.png)
+![tupec_intro](https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/foxy/images/thumper_intro.png)
 
 The project was based on the [6WD Thumper](https://www.tme.eu/Document/3042ea29739d84f52c2c511fe0a15337/DAGU-RS003B75.pdf) solution, a light six wheel chassis of 420x300x130 mm size and 2.7 kg weight equipped with  six motors, each of which mounted on an independent suspension.
 
@@ -16,7 +16,7 @@ The basic elements of the project solution are shown on the diagram below.
 
 ## Operation diagram overview
 
-![tupec_diagram](https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/images/thumper_dgr.png)
+![tupec_diagram](https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/foxy/images/thumper_dgr.png)
 
 Both Olimex STM32-E407 boards are running NuttX and micro-ROS applications, which can exchange data via UDP over 6LoWPAN.
 The joystick's position is converted into the velocity command and then posted on a micro-ROS stack as a message sequence.
@@ -29,7 +29,7 @@ There are two micro-ROS nodes, the joystick's publisher and the robot's subscrib
 
 
 ## Hardware
-The following is a list of the [demo hardware](https://github.com/micro-ROS/micro-ROS_thumper_demo/blob/master/doc/thumper_hardware.md):
+The following is a list of the [demo hardware](https://github.com/micro-ROS/micro-ROS_thumper_demo/blob/foxy/doc/thumper_hardware.md):
 - 1 x Wild Thumper 6WD Chassis,
 - 1 x RoboClaw 2x15A (V5E),
 - 2 x Olimex STM32-E407,
@@ -155,7 +155,7 @@ sudo apt-get update -y
 sudo apt-get install -y wpan-tools
 ```
 
-Having the ATUSB adapter inserted into a USB port on PC, run the script [wpan_atusb.sh](https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/master/atusb/wpan_atusb_sh) with administrator privileges to configure the `6lowpan` interface.
+Having the ATUSB adapter inserted into a USB port on PC, run the script [wpan_atusb.sh](https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/foxy/atusb/wpan_atusb_sh) with administrator privileges to configure the `6lowpan` interface.
 Then, the `lowpan0` interface is ready to be used, so the  communication with the joystick and Thumper 6LoWPAN devices can be established.
 
 - Download the micro-ROS agent Foxy image from  the [Docker Hub](https://hub.docker.com/), then run the agent in udp IPv6 addressing mode.
