@@ -87,14 +87,11 @@ IEEE 802.15 RF transceiver module ([Product Link](https://reference.digilentinc.
 
 #### Extreme 3D Pro Joystick
 
-[Product site](https://www.logitechg.com/en-us/products/space/extreme-3d-pro-joystick.963290-0403.html)
+[Product Link](https://www.amazon.com/Logitech-Extreme-3D-PRO-ordenador/dp/B00CJ5FPTA)
 
 * 12 buttons
 
 <img src="https://raw.githubusercontent.com/micro-ROS/micro-ROS_thumper_demo/foxy/images/extreme-3d-pro-joystick53631.png" width="400">
-
-*Source: [logitechg.com](https://www.logitechg.com/en-us/products/space/extreme-3d-pro-joystick.963290-0403.html)*
-
 
 
 #### Thumper demo wiring
